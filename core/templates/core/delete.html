@@ -1,0 +1,15 @@
+{% extends "core/base.html" %}
+
+{% block title %}Delete{% endblock title%}
+
+{% block content %}
+<h1>Delete</h1>
+
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token%}
+
+    <a href="{% url 'core:home' %}" class="btn btn-success">Back</a>
+    <button type="submit" class="btn btn-outline-danger" value="Add Item">Yes delete</button>
+</form>
+
+{% endblock content %}
